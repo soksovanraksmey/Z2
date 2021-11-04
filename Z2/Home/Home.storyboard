@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite-->
+        <scene sceneID="1PS-cR-Z6b">
+            <objects>
+                <viewController id="6gU-Su-qyu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zsc-gE-x2v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TL9-xP-TDA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="tab_favorite_icon" selectedImage="tab_favorite_icon_selected" id="WIH-9T-5zB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUq-w6-0hv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376.8115942028987" y="393.75"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="NXV-5l-SoB">
+            <objects>
+                <viewController id="n9Q-la-2gg" customClass="HomeController" customModule="Z2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3zN-7f-gCR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OB8-cX-gta"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JNo-gC-tlf">
+                        <barButtonItem key="leftBarButtonItem" image="z1HomeIcon" id="a2l-3w-FvM"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqW-oW-zbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531.8840579710145" y="393.75"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ayb-Fh-7sz">
+            <objects>
+                <tabBarController storyboardIdentifier="home" id="SF4-rf-N7w" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tWH-GA-ei3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" name="Black"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AlD-yG-5rs" kind="relationship" relationship="viewControllers" id="lHc-im-9JQ"/>
+                        <segue destination="6gU-Su-qyu" kind="relationship" relationship="viewControllers" id="I0q-df-MGp"/>
+                        <segue destination="8uf-ep-WmC" kind="relationship" relationship="viewControllers" id="vWF-tn-gSk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ia-7m-FSA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="-359"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="LpA-TO-Xth">
+            <objects>
+                <viewController id="8uf-ep-WmC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bG5-Gq-0bj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="63S-Ye-7eM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Me" image="tab_user_icon" selectedImage="tab_user_icon_selected" id="iOC-Vz-7ed"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0XJ-lV-BY5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2192.753623188406" y="393.75"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="I6M-6H-Y9c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AlD-yG-5rs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home_icon" selectedImage="home_icon_selected" id="3Ey-6m-nkH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PjB-w5-fEY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AfI-8k-aGS">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="n9Q-la-2gg" kind="relationship" relationship="rootViewController" id="hed-u5-Ccu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dA2-tg-Bcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378.26086956521743" y="393.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_icon" width="24" height="24"/>
+        <image name="home_icon_selected" width="24" height="24"/>
+        <image name="tab_favorite_icon" width="24" height="24"/>
+        <image name="tab_favorite_icon_selected" width="24" height="24"/>
+        <image name="tab_user_icon" width="24" height="24"/>
+        <image name="tab_user_icon_selected" width="24" height="24"/>
+        <image name="z1HomeIcon" width="36" height="36"/>
+        <namedColor name="Black">
+            <color red="0.0040000001899898052" green="0.050999999046325684" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

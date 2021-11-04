@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bNQ-xc-Von">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Get StartVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="GetStartVC" customModule="Z2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="67w-bT-wsH" customClass="get">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.082352941176470587" green="0.61568627450980395" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NAI-V4-iRn">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iE7-49-Nlx">
+                                <rect key="frame" x="20" y="774" width="374" height="88"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="S4j-ed-IH7">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9Tn-LF-lUp"/>
+                                        </constraints>
+                                        <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="currentPageIndicatorTintColor" name="Z1 Aqua"/>
+                                    </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19M-3e-jSb">
+                                        <rect key="frame" x="0.0" y="48" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ED7-UB-C1z"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Z1 Aqua"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Get Start">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" name="Z1 Aqua"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnGetStart:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4lL-cy-2hY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="19M-3e-jSb" firstAttribute="leading" secondItem="iE7-49-Nlx" secondAttribute="leading" id="ArX-2L-tAn"/>
+                                    <constraint firstItem="S4j-ed-IH7" firstAttribute="leading" secondItem="iE7-49-Nlx" secondAttribute="leading" id="Ru9-CI-JJO"/>
+                                    <constraint firstItem="S4j-ed-IH7" firstAttribute="top" secondItem="iE7-49-Nlx" secondAttribute="top" priority="750" constant="10" id="hEp-iK-Ntn"/>
+                                    <constraint firstItem="19M-3e-jSb" firstAttribute="top" secondItem="S4j-ed-IH7" secondAttribute="bottom" constant="8" symbolic="YES" id="rOW-Cd-byQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="19M-3e-jSb" secondAttribute="trailing" id="tM6-8c-8Zb"/>
+                                    <constraint firstAttribute="trailing" secondItem="S4j-ed-IH7" secondAttribute="trailing" id="yg4-qC-rck"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="67w-bT-wsH" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Ak5-3O-bHV"/>
+                            <constraint firstItem="67w-bT-wsH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CAE-JK-aco"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iE7-49-Nlx" secondAttribute="trailing" constant="20" id="GiM-XX-67j"/>
+                            <constraint firstItem="67w-bT-wsH" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="NZX-Qp-rYK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="iE7-49-Nlx" secondAttribute="bottom" id="Tja-xe-Nk1"/>
+                            <constraint firstItem="iE7-49-Nlx" firstAttribute="top" secondItem="67w-bT-wsH" secondAttribute="bottom" id="deo-4S-i0o"/>
+                            <constraint firstItem="iE7-49-Nlx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hZ5-rg-LqA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nM7-cu-Q0K"/>
+                    <connections>
+                        <outlet property="btnGetStart" destination="19M-3e-jSb" id="ZSM-Oz-mib"/>
+                        <outlet property="collection" destination="67w-bT-wsH" id="0P7-XF-Odz"/>
+                        <outlet property="pageControl" destination="S4j-ed-IH7" id="VlZ-z0-MTz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8115942028987" y="4.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="M37-pK-Ijf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="bNQ-xc-Von" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Tq-ZO-hFQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="QXL-bL-549"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CT7-NV-abJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.66666666666674" y="4.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Z1 Aqua">
+            <color red="0.071000002324581146" green="0.72200000286102295" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

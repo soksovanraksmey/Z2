@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		521192D427323D3700E8ED11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D327323D3700E8ED11 /* AppDelegate.swift */; };
 		521192D627323D3700E8ED11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D527323D3700E8ED11 /* SceneDelegate.swift */; };
-		521192D827323D3700E8ED11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D727323D3700E8ED11 /* ViewController.swift */; };
-		521192DB27323D3700E8ED11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521192D927323D3700E8ED11 /* Main.storyboard */; };
+		521192D827323D3700E8ED11 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D727323D3700E8ED11 /* HomeController.swift */; };
 		521192DD27323D4000E8ED11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521192DC27323D4000E8ED11 /* Assets.xcassets */; };
 		521192E027323D4000E8ED11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521192DE27323D4000E8ED11 /* LaunchScreen.storyboard */; };
+		521192F12732684C00E8ED11 /* GetStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192F02732684C00E8ED11 /* GetStartVC.swift */; };
+		5231EE622732E3D500D1A712 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5231EE612732E3D500D1A712 /* Start.storyboard */; };
+		52AA7C9B2733717400E96293 /* CollectionViewCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA7C992733717400E96293 /* CollectionViewCellVC.swift */; };
+		52AA7C9C2733717400E96293 /* CollectionViewCellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AA7C9A2733717400E96293 /* CollectionViewCellVC.xib */; };
+		52DA29AE2733E6FB00091B9F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA29AD2733E6FB00091B9F /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		521192D027323D3700E8ED11 /* Z2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521192D327323D3700E8ED11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		521192D527323D3700E8ED11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		521192D727323D3700E8ED11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		521192DA27323D3700E8ED11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		521192D727323D3700E8ED11 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		521192DC27323D4000E8ED11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		521192DF27323D4000E8ED11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		521192E127323D4000E8ED11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		521192F02732684C00E8ED11 /* GetStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartVC.swift; sourceTree = "<group>"; };
+		5231EE612732E3D500D1A712 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		52AA7C992733717400E96293 /* CollectionViewCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellVC.swift; sourceTree = "<group>"; };
+		52AA7C9A2733717400E96293 /* CollectionViewCellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellVC.xib; sourceTree = "<group>"; };
+		52DA29AD2733E6FB00091B9F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		521192D227323D3700E8ED11 /* Z2 */ = {
 			isa = PBXGroup;
 			children = (
+				521192ED273267E100E8ED11 /* GetStart */,
+				521192EA2732434C00E8ED11 /* view */,
+				521192E92732433A00E8ED11 /* Profile */,
+				521192E82732431E00E8ED11 /* Favorites */,
+				521192E72732430F00E8ED11 /* Home */,
 				521192D327323D3700E8ED11 /* AppDelegate.swift */,
 				521192D527323D3700E8ED11 /* SceneDelegate.swift */,
-				521192D727323D3700E8ED11 /* ViewController.swift */,
-				521192D927323D3700E8ED11 /* Main.storyboard */,
 				521192DC27323D4000E8ED11 /* Assets.xcassets */,
-				521192DE27323D4000E8ED11 /* LaunchScreen.storyboard */,
 				521192E127323D4000E8ED11 /* Info.plist */,
 			);
 			path = Z2;
+			sourceTree = "<group>";
+		};
+		521192E72732430F00E8ED11 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				521192D727323D3700E8ED11 /* HomeController.swift */,
+				52DA29AD2733E6FB00091B9F /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		521192E82732431E00E8ED11 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		521192E92732433A00E8ED11 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		521192EA2732434C00E8ED11 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				521192DE27323D4000E8ED11 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		521192ED273267E100E8ED11 /* GetStart */ = {
+			isa = PBXGroup;
+			children = (
+				521192F02732684C00E8ED11 /* GetStartVC.swift */,
+				5231EE612732E3D500D1A712 /* Start.storyboard */,
+				52AA7C992733717400E96293 /* CollectionViewCellVC.swift */,
+				52AA7C9A2733717400E96293 /* CollectionViewCellVC.xib */,
+			);
+			path = GetStart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				521192E027323D4000E8ED11 /* LaunchScreen.storyboard in Resources */,
+				52DA29AE2733E6FB00091B9F /* Home.storyboard in Resources */,
+				52AA7C9C2733717400E96293 /* CollectionViewCellVC.xib in Resources */,
 				521192DD27323D4000E8ED11 /* Assets.xcassets in Resources */,
-				521192DB27323D3700E8ED11 /* Main.storyboard in Resources */,
+				5231EE622732E3D500D1A712 /* Start.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521192D827323D3700E8ED11 /* ViewController.swift in Sources */,
+				521192D827323D3700E8ED11 /* HomeController.swift in Sources */,
+				52AA7C9B2733717400E96293 /* CollectionViewCellVC.swift in Sources */,
 				521192D427323D3700E8ED11 /* AppDelegate.swift in Sources */,
+				521192F12732684C00E8ED11 /* GetStartVC.swift in Sources */,
 				521192D627323D3700E8ED11 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +203,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		521192D927323D3700E8ED11 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				521192DA27323D3700E8ED11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		521192DE27323D4000E8ED11 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -217,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,9 +341,10 @@
 				INFOPLIST_FILE = Z2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Start;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +369,10 @@
 				INFOPLIST_FILE = Z2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Start;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
