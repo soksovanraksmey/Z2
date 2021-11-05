@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="67w-bT-wsH" customClass="get">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="754"/>
                                 <color key="backgroundColor" red="0.082352941176470587" green="0.61568627450980395" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NAI-V4-iRn">
                                     <size key="itemSize" width="128" height="128"/>
@@ -30,7 +30,7 @@
                                 <cells/>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iE7-49-Nlx">
-                                <rect key="frame" x="20" y="774" width="374" height="88"/>
+                                <rect key="frame" x="20" y="764" width="374" height="88"/>
                                 <subviews>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="S4j-ed-IH7">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -66,8 +66,6 @@
                                 <constraints>
                                     <constraint firstItem="19M-3e-jSb" firstAttribute="leading" secondItem="iE7-49-Nlx" secondAttribute="leading" id="ArX-2L-tAn"/>
                                     <constraint firstItem="S4j-ed-IH7" firstAttribute="leading" secondItem="iE7-49-Nlx" secondAttribute="leading" id="Ru9-CI-JJO"/>
-                                    <constraint firstItem="S4j-ed-IH7" firstAttribute="top" secondItem="iE7-49-Nlx" secondAttribute="top" priority="750" constant="10" id="hEp-iK-Ntn"/>
-                                    <constraint firstItem="19M-3e-jSb" firstAttribute="top" secondItem="S4j-ed-IH7" secondAttribute="bottom" constant="8" symbolic="YES" id="rOW-Cd-byQ"/>
                                     <constraint firstAttribute="trailing" secondItem="19M-3e-jSb" secondAttribute="trailing" id="tM6-8c-8Zb"/>
                                     <constraint firstAttribute="trailing" secondItem="S4j-ed-IH7" secondAttribute="trailing" id="yg4-qC-rck"/>
                                 </constraints>
@@ -80,8 +78,8 @@
                             <constraint firstItem="67w-bT-wsH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CAE-JK-aco"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iE7-49-Nlx" secondAttribute="trailing" constant="20" id="GiM-XX-67j"/>
                             <constraint firstItem="67w-bT-wsH" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="NZX-Qp-rYK"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="iE7-49-Nlx" secondAttribute="bottom" id="Tja-xe-Nk1"/>
-                            <constraint firstItem="iE7-49-Nlx" firstAttribute="top" secondItem="67w-bT-wsH" secondAttribute="bottom" id="deo-4S-i0o"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="iE7-49-Nlx" secondAttribute="bottom" constant="10" id="Tja-xe-Nk1"/>
+                            <constraint firstItem="iE7-49-Nlx" firstAttribute="top" secondItem="67w-bT-wsH" secondAttribute="bottom" constant="10" id="deo-4S-i0o"/>
                             <constraint firstItem="iE7-49-Nlx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hZ5-rg-LqA"/>
                         </constraints>
                     </view>

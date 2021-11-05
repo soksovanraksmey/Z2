@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n6S-xp-fPL">
-                        <rect key="frame" x="0.0" y="0.0" width="376" height="747"/>
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="533.5"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z2 App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0N-z7-cpB">
                         <rect key="frame" x="149.5" y="60" width="77" height="29"/>
@@ -42,7 +42,7 @@
                 <constraint firstItem="43G-J3-8fL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="If1-ao-pll"/>
                 <constraint firstItem="43G-J3-8fL" firstAttribute="top" secondItem="E0N-z7-cpB" secondAttribute="bottom" constant="10" id="MYl-ri-AiB"/>
                 <constraint firstAttribute="trailing" secondItem="n6S-xp-fPL" secondAttribute="trailing" id="d52-6c-VN7"/>
-                <constraint firstAttribute="bottom" secondItem="n6S-xp-fPL" secondAttribute="bottom" id="fby-yi-1af"/>
+                <constraint firstAttribute="bottom" secondItem="n6S-xp-fPL" secondAttribute="bottom" multiplier="1.4" priority="250" id="fby-yi-1af"/>
                 <constraint firstItem="n6S-xp-fPL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wDF-UM-0fk"/>
             </constraints>
             <size key="customSize" width="376" height="747"/>
