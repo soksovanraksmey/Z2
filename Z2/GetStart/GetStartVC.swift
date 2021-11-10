@@ -58,9 +58,10 @@ class GetStartVC: UIViewController{
     
     @IBAction func btnGetStart(_ sender: Any) {
 
+        //  change rootVC for push controller 
         let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "home")
-        navigationController?.pushViewController(vc, animated: true)
-        
+        UIApplication.shared.windows.first?.rootViewController = vc
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
         
     }
     
@@ -130,6 +131,7 @@ extension GetStartVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
 //        }
         return cell
     }
+    
     
    
    
