@@ -29,12 +29,9 @@ class HomeMainViewTableVC: UIViewController {
  
 extension HomeMainViewTableVC: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("hello world")
-    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 2
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -83,21 +80,21 @@ extension HomeMainViewTableVC: UITableViewDelegate, UITableViewDataSource {
     
     
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-////        switch indexPath.section{
-////        case 0 :
-////            print("hello")
-////        case 1 :
-////            let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "detail") as? InfoDetail
-////            self.navigationController?.pushViewController(vc!, animated: true)
-////
-////        default:
-////            print(Error.self)
-////        }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+//        switch indexPath.section{
+//        case 0 :
+//            print("hello")
+//        case 1 :
+            let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "detail") as? InfoDetail
+            self.navigationController?.pushViewController(vc!, animated: true)
+
+//        default:
+//            print(Error.self)
+//        }
 //        print("hello")
-//
-//    }
+
+    }
     
     
     

@@ -31,13 +31,5 @@ class LatestPropertyTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func detail(_ sender: Any) {
-    
-//        let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "detail")
-//
-//        self.inputViewController?.navigationController?.pushViewController(vc, animated: true)
-        print("hellotrtrgh")
-        
-    
-    }
+   
 }

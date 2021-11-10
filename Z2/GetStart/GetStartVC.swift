@@ -42,6 +42,8 @@ class GetStartVC: UIViewController{
         let nib = UINib(nibName: "CollectionViewCellVC", bundle: nil)
         collection.register(nib, forCellWithReuseIdentifier: "CollectionViewCellVC")
         
+        btnGetStart.layer.cornerRadius = 5
+        
 //        let flowlayout = self.collection.collectionViewLayout as? UICollectionViewFlowLayout
 //        flowlayout?.scrollDirection = .horizontal
 //
@@ -71,9 +73,6 @@ class GetStartVC: UIViewController{
 
 extension GetStartVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-    }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNum = scrollView.contentOffset.x,width = scrollView.frame.size.width
