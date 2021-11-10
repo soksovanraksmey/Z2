@@ -80,6 +80,7 @@
 		521192D227323D3700E8ED11 /* Z2 */ = {
 			isa = PBXGroup;
 			children = (
+				52FA35C8273B82B700B301D2 /* language */,
 				521192ED273267E100E8ED11 /* GetStart */,
 				521192EA2732434C00E8ED11 /* view */,
 				521192E92732433A00E8ED11 /* Profile */,
@@ -149,6 +150,13 @@
 				52B52193273B5BA200A7939A /* InfoDetail.swift */,
 			);
 			path = homeDetail;
+			sourceTree = "<group>";
+		};
+		52FA35C8273B82B700B301D2 /* language */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = language;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

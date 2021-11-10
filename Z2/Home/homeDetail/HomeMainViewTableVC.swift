@@ -58,7 +58,7 @@ extension HomeMainViewTableVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: LatestPropertyTableViewCell.id, for: indexPath)
             return cell
         default:
-            let cell = UITableViewCell()
+            
             
             return UITableViewCell()
         }
