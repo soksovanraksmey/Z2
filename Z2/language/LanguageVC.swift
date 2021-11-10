@@ -18,11 +18,6 @@ class LanguageVC: UIViewController {
 
     @IBAction func btn(_ sender: Any) {
     
-//        let vc = UIStoryboard(name: "Start", bundle: Bundle.main).instantiateViewController(withIdentifier: "start")
-//        UIApplication.shared.windows.first?.rootViewController = vc
-//        UIApplication.shared.windows.first?.makeKeyAndVisible()
-//
-    
         let vc = UIStoryboard(name: "Start", bundle: Bundle.main).instantiateViewController(withIdentifier: "start") as? GetStartVC
         vc?.modalPresentationStyle = .fullScreen
         navigationController?.present(vc!, animated: true)
