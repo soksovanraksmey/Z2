@@ -14,6 +14,8 @@
 		521192E027323D4000E8ED11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521192DE27323D4000E8ED11 /* LaunchScreen.storyboard */; };
 		521192F12732684C00E8ED11 /* GetStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192F02732684C00E8ED11 /* GetStartVC.swift */; };
 		5231EE622732E3D500D1A712 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5231EE612732E3D500D1A712 /* Start.storyboard */; };
+		526AFC22273E0AE000BAF3BF /* CheckMarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AFC20273E0AE000BAF3BF /* CheckMarkTableViewCell.swift */; };
+		526AFC23273E0AE000BAF3BF /* CheckMarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526AFC21273E0AE000BAF3BF /* CheckMarkTableViewCell.xib */; };
 		529050D72736606E004DD96D /* HomeMainViewTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529050D62736606E004DD96D /* HomeMainViewTableVC.swift */; };
 		52AA7C9B2733717400E96293 /* CollectionViewCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA7C992733717400E96293 /* CollectionViewCellVC.swift */; };
 		52AA7C9C2733717400E96293 /* CollectionViewCellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AA7C9A2733717400E96293 /* CollectionViewCellVC.xib */; };
@@ -39,6 +41,8 @@
 		521192E127323D4000E8ED11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		521192F02732684C00E8ED11 /* GetStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartVC.swift; sourceTree = "<group>"; };
 		5231EE612732E3D500D1A712 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		526AFC20273E0AE000BAF3BF /* CheckMarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkTableViewCell.swift; sourceTree = "<group>"; };
+		526AFC21273E0AE000BAF3BF /* CheckMarkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckMarkTableViewCell.xib; sourceTree = "<group>"; };
 		529050D62736606E004DD96D /* HomeMainViewTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainViewTableVC.swift; sourceTree = "<group>"; };
 		52AA7C992733717400E96293 /* CollectionViewCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellVC.swift; sourceTree = "<group>"; };
 		52AA7C9A2733717400E96293 /* CollectionViewCellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellVC.xib; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 			children = (
 				52FA35D0273B899900B301D2 /* ChooseLang.storyboard */,
 				52FA35D2273B89BA00B301D2 /* LanguageVC.swift */,
+				526AFC20273E0AE000BAF3BF /* CheckMarkTableViewCell.swift */,
+				526AFC21273E0AE000BAF3BF /* CheckMarkTableViewCell.xib */,
 			);
 			path = language;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 				52C2C90D27390519008AE895 /* BannerCollectionViewCell.xib in Resources */,
 				52AA7C9C2733717400E96293 /* CollectionViewCellVC.xib in Resources */,
 				521192DD27323D4000E8ED11 /* Assets.xcassets in Resources */,
+				526AFC23273E0AE000BAF3BF /* CheckMarkTableViewCell.xib in Resources */,
 				52C2C9082738D277008AE895 /* LatestPropertyTableViewCell.xib in Resources */,
 				52FA35D1273B899900B301D2 /* ChooseLang.storyboard in Resources */,
 				5231EE622732E3D500D1A712 /* Start.storyboard in Resources */,
@@ -249,6 +256,7 @@
 				52AA7C9B2733717400E96293 /* CollectionViewCellVC.swift in Sources */,
 				52C2C9072738D277008AE895 /* LatestPropertyTableViewCell.swift in Sources */,
 				521192D427323D3700E8ED11 /* AppDelegate.swift in Sources */,
+				526AFC22273E0AE000BAF3BF /* CheckMarkTableViewCell.swift in Sources */,
 				52B52194273B5BA200A7939A /* InfoDetail.swift in Sources */,
 				521192F12732684C00E8ED11 /* GetStartVC.swift in Sources */,
 				521192D627323D3700E8ED11 /* SceneDelegate.swift in Sources */,
