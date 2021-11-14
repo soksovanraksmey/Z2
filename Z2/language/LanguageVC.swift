@@ -57,21 +57,34 @@ extension LanguageVC: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) as? CheckMarkTableViewCell else {
-               return
+//        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        
+         let cell = tableView.cellForRow(at: indexPath) as! CheckMarkTableViewCell 
+        
+        if cell.isCheck == false{
+            
+            cell.isCheck = true
+            cell.tbnCheck.setImage(UIImage(named: "active-tick-square"), for: .normal)
+            print("1")
+            
+        }else{
+            cell.isCheck = false
+            cell.tbnCheck.setImage(UIImage(named: ""), for: .normal)
+            print("2")
         }
-        if cell.tbnCheck.contains(indexPath as! UIFocusEnvironment){
-            
-            cell.tbnCheck.isHidden = false
-            
-        }else {
-            cell.tbnCheck.isHidden = true
-        }
-            
-            
-        print("check")
-
+       
+        
     }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? CheckMarkTableViewCell else {
+                   return
+               }
+        
+        cell.tbnCheck.setImage(UIImage(named: ""), for: .normal)
+        print("3")
+    }
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
@@ -80,3 +93,14 @@ extension LanguageVC: UITableViewDelegate,UITableViewDataSource{
     
     
 }
+//if self.selectedRows.contains(indexPath) {
+//            self.selectedRows.remove(at: self.selectedRows.index(of: indexPath)!)
+//            cell.checkBox.setImage(UIImage(named:"uncheck.png"), for: .normal)
+//        } else {
+//            self.selectedRows.append(indexPath)
+//            cell.checkBox.setImage(UIImage(named:"check.png"), for: .normal)
+//
+//            let indexPath = tableView.indexPathForSelectedRow //optional, to get from any UIButton for example
+//            let currentCell = tableView.cellForRow(at: indexPath!) as! MyCustomCell
+//            print(currentCell.myCellLabel.text ?? "")
+//        }

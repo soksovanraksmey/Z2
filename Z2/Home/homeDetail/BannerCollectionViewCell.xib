@@ -20,26 +20,18 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner1" translatesAutoresizingMaskIntoConstraints="NO" id="xrS-iZ-P15">
                         <rect key="frame" x="0.0" y="0.0" width="280" height="154"/>
                     </imageView>
-                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WoH-gE-M79">
-                        <rect key="frame" x="62" y="122" width="156" height="26"/>
-                    </pageControl>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="WoH-gE-M79" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="62" id="14R-LZ-gO5"/>
-                <constraint firstAttribute="trailing" secondItem="WoH-gE-M79" secondAttribute="trailing" constant="62" id="3KV-wX-ZAS"/>
                 <constraint firstItem="xrS-iZ-P15" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SZl-2A-zc5"/>
                 <constraint firstItem="xrS-iZ-P15" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TXD-Td-dfh"/>
                 <constraint firstAttribute="bottom" secondItem="xrS-iZ-P15" secondAttribute="bottom" id="ZBl-En-Uh4"/>
-                <constraint firstAttribute="bottom" secondItem="WoH-gE-M79" secondAttribute="bottom" constant="6" id="pB2-Es-921"/>
                 <constraint firstAttribute="trailing" secondItem="xrS-iZ-P15" secondAttribute="trailing" id="tcx-Cb-mKu"/>
-                <constraint firstItem="WoH-gE-M79" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="122" id="vPy-nM-KrJ"/>
             </constraints>
             <size key="customSize" width="280" height="154"/>
             <connections>
                 <outlet property="imageBanner" destination="xrS-iZ-P15" id="HiM-eO-PFo"/>
-                <outlet property="pageControl" destination="WoH-gE-M79" id="H6z-qX-AHm"/>
             </connections>
             <point key="canvasLocation" x="151" y="67"/>
         </collectionViewCell>

@@ -158,7 +158,7 @@
                 <outlet property="imageSell" destination="4Ye-OX-Nfx" id="Fvd-nr-aF5"/>
                 <outlet property="viewDate" destination="VNN-UG-Wcy" id="4M1-HR-TWL"/>
             </connections>
-            <point key="canvasLocation" x="207.97101449275365" y="67.96875"/>
+            <point key="canvasLocation" x="362" y="30"/>
         </tableViewCell>
     </objects>
     <resources>

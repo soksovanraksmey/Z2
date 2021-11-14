@@ -10,6 +10,7 @@ import UIKit
 class BannerTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     let image = ["banner1","banner2","banner3"]
     
@@ -35,11 +36,9 @@ extension BannerTableViewCell: UICollectionViewDelegate,UICollectionViewDataSour
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
-        
         let center = CGPoint(x: scrollView.contentOffset.x + (scrollView.frame.width / 2), y: (scrollView.frame.height / 2))
         if let indexPath = collectionView.indexPathForItem(at: center) {
-            page.pageControl?.currentPage = indexPath.row
-            
+            pageControl.currentPage = indexPath.row
         }
     }
     

@@ -33,7 +33,7 @@
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-uu-5KA">
                         <rect key="frame" x="357" y="16" width="21" height="22"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Button" image="active-tick-square"/>
+                        <state key="normal" title="Button"/>
                     </button>
                 </subviews>
                 <constraints>
@@ -57,7 +57,4 @@
             <point key="canvasLocation" x="34.782608695652179" y="55.580357142857139"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="active-tick-square" width="20" height="20"/>
-    </resources>
 </document>

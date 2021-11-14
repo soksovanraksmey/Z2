@@ -10,7 +10,6 @@ import UIKit
 class BannerCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var imageBanner: UIImageView!
-    @IBOutlet weak var pageControl: UIPageControl!
     
     override func awakeFromNib() {
         super.awakeFromNib()

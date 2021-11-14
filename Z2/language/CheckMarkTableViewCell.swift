@@ -13,13 +13,13 @@ class CheckMarkTableViewCell: UITableViewCell {
     @IBOutlet var nameContry: UILabel!
     @IBOutlet var tbnCheck: UIButton!
     
+    var isCheck = false
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        tbnCheck.isHidden = true
+//        tbnCheck.isHidden = true
         
-        
-        
+    
         
         
     }
