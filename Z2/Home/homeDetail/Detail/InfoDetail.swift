@@ -11,20 +11,31 @@ class InfoDetail: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var btnCall: UIButton!
     
+    @IBOutlet weak var btnBookVisit: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
         tableView.delegate = self
        
-//        navigationItem.backBarButtonItem = UIBarButtonItem(title: "")
+
+        btnCall.layer.cornerRadius = 5
+        btnBookVisit.layer.cornerRadius = 5
+    
+        btnBookVisit.layer.borderWidth = 1
+        btnBookVisit.layer.borderColor = UIColor.systemTeal.cgColor
+        
         tableView.register(TableViewCellSection1.nib, forCellReuseIdentifier: TableViewCellSection1.id)
         tableView.register(TableViewCellSection2.nib, forCellReuseIdentifier: TableViewCellSection2.id)
         tableView.register(TableViewCellSection3.nib, forCellReuseIdentifier: TableViewCellSection3.id)
         tableView.register(TableViewCellSection4.nib, forCellReuseIdentifier: TableViewCellSection4.id)
         tableView.register(TableViewCellSection5.nib, forCellReuseIdentifier: TableViewCellSection5.id)
         tableView.register(TableViewCellSection6.nib, forCellReuseIdentifier: TableViewCellSection6.id)
+        tableView.register(TableViewCellSection7.nib, forCellReuseIdentifier: TableViewCellSection7.id)
+        tableView.register(TableViewCellSection8.nib, forCellReuseIdentifier: TableViewCellSection8.id)
+        tableView.register(TableViewCellSection9.nib, forCellReuseIdentifier: TableViewCellSection9.id)
 
         
     }
@@ -38,7 +49,7 @@ class InfoDetail: UIViewController {
 extension InfoDetail: UITableViewDelegate,UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        8
+        9
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,6 +65,12 @@ extension InfoDetail: UITableViewDelegate,UITableViewDataSource {
         case 4:
             return 1
         case 5:
+            return 1
+        case 6:
+            return 1
+        case 7:
+            return 1
+        case 8:
             return 1
         default:
             return 0
@@ -81,7 +98,15 @@ extension InfoDetail: UITableViewDelegate,UITableViewDataSource {
         case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellSection6.id, for: indexPath)
             return cell
-            
+        case 6:
+            let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellSection7.id, for: indexPath)
+            return cell
+        case 7:
+            let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellSection8.id, for: indexPath)
+            return cell
+        case 8:
+            let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellSection9.id, for: indexPath)
+            return cell
         default:
             
             
@@ -91,7 +116,7 @@ extension InfoDetail: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section{
         case 0 :
-            return 380
+            return 420
         case 1 :
             return 140
         case 2 :
@@ -102,6 +127,12 @@ extension InfoDetail: UITableViewDelegate,UITableViewDataSource {
             return 142
         case 5 :
             return 466
+        case 6 :
+            return 300
+        case 7 :
+            return 300
+        case 8 :
+            return 133
 //            
         default:
             return 0

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041507C727465F9C00CBC898 /* GeneralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041507C527465F9C00CBC898 /* GeneralCell.swift */; };
+		041507C827465F9C00CBC898 /* GeneralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041507C627465F9C00CBC898 /* GeneralCell.xib */; };
+		043435B4274CAE4800ED20B8 /* TextFieldsFloating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043435B3274CAE4800ED20B8 /* TextFieldsFloating.swift */; };
+		043435B6274CE4F200ED20B8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043435B5274CE4F200ED20B8 /* CustomTextField.swift */; };
+		0471E528274632810091EBB2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E527274632810091EBB2 /* ProfileVC.swift */; };
+		0471E53A274650B90091EBB2 /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E539274650B90091EBB2 /* SingUpVC.swift */; };
+		0471E53C27465A870091EBB2 /* ProfileSingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E53B27465A870091EBB2 /* ProfileSingUp.swift */; };
 		047232892740F39100496D75 /* TableViewCellSection1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047232872740F39100496D75 /* TableViewCellSection1.swift */; };
 		0472328A2740F39100496D75 /* TableViewCellSection1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047232882740F39100496D75 /* TableViewCellSection1.xib */; };
 		0472328D2740F45E00496D75 /* TableViewCellSection2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472328B2740F45E00496D75 /* TableViewCellSection2.swift */; };
@@ -19,6 +26,18 @@
 		0472329E27410E0F00496D75 /* TableViewCellSection5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0472329C27410E0F00496D75 /* TableViewCellSection5.xib */; };
 		047232A127410E1C00496D75 /* TableViewCellSection6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472329F27410E1C00496D75 /* TableViewCellSection6.swift */; };
 		047232A227410E1C00496D75 /* TableViewCellSection6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047232A027410E1C00496D75 /* TableViewCellSection6.xib */; };
+		0474838F2741FEFF009B3D47 /* TableViewCellSection7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474838D2741FEFF009B3D47 /* TableViewCellSection7.swift */; };
+		047483902741FEFF009B3D47 /* TableViewCellSection7.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0474838E2741FEFF009B3D47 /* TableViewCellSection7.xib */; };
+		047483932741FF0F009B3D47 /* TableViewCellSection8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047483912741FF0F009B3D47 /* TableViewCellSection8.swift */; };
+		047483942741FF0F009B3D47 /* TableViewCellSection8.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047483922741FF0F009B3D47 /* TableViewCellSection8.xib */; };
+		047483972741FF27009B3D47 /* TableViewCellSection9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047483952741FF27009B3D47 /* TableViewCellSection9.swift */; };
+		047483982741FF27009B3D47 /* TableViewCellSection9.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047483962741FF27009B3D47 /* TableViewCellSection9.xib */; };
+		0474839C27420187009B3D47 /* CollectionViewCellDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474839A27420187009B3D47 /* CollectionViewCellDetail.swift */; };
+		0474839D27420187009B3D47 /* CollectionViewCellDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0474839B27420187009B3D47 /* CollectionViewCellDetail.xib */; };
+		047C130D274217C40092B3A6 /* CollectionViewCellButton6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C130B274217C40092B3A6 /* CollectionViewCellButton6.swift */; };
+		047C130E274217C40092B3A6 /* CollectionViewCellButton6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047C130C274217C40092B3A6 /* CollectionViewCellButton6.xib */; };
+		048792C327456FCA001293EC /* CollectionViewCellDetail1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048792C127456FCA001293EC /* CollectionViewCellDetail1.swift */; };
+		048792C427456FCA001293EC /* CollectionViewCellDetail1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048792C227456FCA001293EC /* CollectionViewCellDetail1.xib */; };
 		521192D427323D3700E8ED11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D327323D3700E8ED11 /* AppDelegate.swift */; };
 		521192D627323D3700E8ED11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D527323D3700E8ED11 /* SceneDelegate.swift */; };
 		521192D827323D3700E8ED11 /* HomeTapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D727323D3700E8ED11 /* HomeTapBarController.swift */; };
@@ -41,9 +60,17 @@
 		52DA29AE2733E6FB00091B9F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA29AD2733E6FB00091B9F /* Home.storyboard */; };
 		52FA35D1273B899900B301D2 /* ChooseLang.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FA35D0273B899900B301D2 /* ChooseLang.storyboard */; };
 		52FA35D3273B89BA00B301D2 /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA35D2273B89BA00B301D2 /* LanguageVC.swift */; };
+		8D19B0440D01869060947C76 /* Pods_Z2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DEC56B5CF58C77045E323B /* Pods_Z2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041507C527465F9C00CBC898 /* GeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCell.swift; sourceTree = "<group>"; };
+		041507C627465F9C00CBC898 /* GeneralCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralCell.xib; sourceTree = "<group>"; };
+		043435B3274CAE4800ED20B8 /* TextFieldsFloating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsFloating.swift; sourceTree = "<group>"; };
+		043435B5274CE4F200ED20B8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0471E527274632810091EBB2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = Z2/Home/homeDetail/Detail/ProfileVC.swift; sourceTree = SOURCE_ROOT; };
+		0471E539274650B90091EBB2 /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
+		0471E53B27465A870091EBB2 /* ProfileSingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSingUp.swift; sourceTree = "<group>"; };
 		047232872740F39100496D75 /* TableViewCellSection1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSection1.swift; sourceTree = "<group>"; };
 		047232882740F39100496D75 /* TableViewCellSection1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellSection1.xib; sourceTree = "<group>"; };
 		0472328B2740F45E00496D75 /* TableViewCellSection2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSection2.swift; sourceTree = "<group>"; };
@@ -56,6 +83,20 @@
 		0472329C27410E0F00496D75 /* TableViewCellSection5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellSection5.xib; sourceTree = "<group>"; };
 		0472329F27410E1C00496D75 /* TableViewCellSection6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSection6.swift; sourceTree = "<group>"; };
 		047232A027410E1C00496D75 /* TableViewCellSection6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellSection6.xib; sourceTree = "<group>"; };
+		0474838D2741FEFF009B3D47 /* TableViewCellSection7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSection7.swift; sourceTree = "<group>"; };
+		0474838E2741FEFF009B3D47 /* TableViewCellSection7.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellSection7.xib; sourceTree = "<group>"; };
+		047483912741FF0F009B3D47 /* TableViewCellSection8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSection8.swift; sourceTree = "<group>"; };
+		047483922741FF0F009B3D47 /* TableViewCellSection8.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellSection8.xib; sourceTree = "<group>"; };
+		047483952741FF27009B3D47 /* TableViewCellSection9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSection9.swift; sourceTree = "<group>"; };
+		047483962741FF27009B3D47 /* TableViewCellSection9.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellSection9.xib; sourceTree = "<group>"; };
+		0474839A27420187009B3D47 /* CollectionViewCellDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellDetail.swift; sourceTree = "<group>"; };
+		0474839B27420187009B3D47 /* CollectionViewCellDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellDetail.xib; sourceTree = "<group>"; };
+		047C130B274217C40092B3A6 /* CollectionViewCellButton6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellButton6.swift; sourceTree = "<group>"; };
+		047C130C274217C40092B3A6 /* CollectionViewCellButton6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellButton6.xib; sourceTree = "<group>"; };
+		048792C127456FCA001293EC /* CollectionViewCellDetail1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellDetail1.swift; sourceTree = "<group>"; };
+		048792C227456FCA001293EC /* CollectionViewCellDetail1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellDetail1.xib; sourceTree = "<group>"; };
+		32656D7C08C05610E8945C9D /* Pods-Z2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z2.debug.xcconfig"; path = "Target Support Files/Pods-Z2/Pods-Z2.debug.xcconfig"; sourceTree = "<group>"; };
+		3DA47DCFB67F4E03F37E016D /* Pods-Z2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z2.release.xcconfig"; path = "Target Support Files/Pods-Z2/Pods-Z2.release.xcconfig"; sourceTree = "<group>"; };
 		521192D027323D3700E8ED11 /* Z2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521192D327323D3700E8ED11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		521192D527323D3700E8ED11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +121,7 @@
 		52DA29AD2733E6FB00091B9F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		52FA35D0273B899900B301D2 /* ChooseLang.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseLang.storyboard; sourceTree = "<group>"; };
 		52FA35D2273B89BA00B301D2 /* LanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVC.swift; sourceTree = "<group>"; };
+		55DEC56B5CF58C77045E323B /* Pods_Z2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,18 +129,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D19B0440D01869060947C76 /* Pods_Z2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0471E5352746403F0091EBB2 /* allSectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				041507C527465F9C00CBC898 /* GeneralCell.swift */,
+				041507C627465F9C00CBC898 /* GeneralCell.xib */,
+			);
+			path = allSectionCell;
+			sourceTree = "<group>";
+		};
+		0471E538274650940091EBB2 /* SingUp */ = {
+			isa = PBXGroup;
+			children = (
+				0471E539274650B90091EBB2 /* SingUpVC.swift */,
+				0471E53B27465A870091EBB2 /* ProfileSingUp.swift */,
+				043435B3274CAE4800ED20B8 /* TextFieldsFloating.swift */,
+				043435B5274CE4F200ED20B8 /* CustomTextField.swift */,
+			);
+			path = SingUp;
+			sourceTree = "<group>";
+		};
 		047232862740F31400496D75 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				52B52193273B5BA200A7939A /* InfoDetail.swift */,
 				047232872740F39100496D75 /* TableViewCellSection1.swift */,
 				047232882740F39100496D75 /* TableViewCellSection1.xib */,
+				048792C527456FDB001293EC /* tableViewCell 1 */,
 				0472328B2740F45E00496D75 /* TableViewCellSection2.swift */,
 				0472328C2740F45E00496D75 /* TableViewCellSection2.xib */,
 				0472328F27410DB200496D75 /* TableViewCellSection3.swift */,
@@ -109,8 +173,51 @@
 				0472329C27410E0F00496D75 /* TableViewCellSection5.xib */,
 				0472329F27410E1C00496D75 /* TableViewCellSection6.swift */,
 				047232A027410E1C00496D75 /* TableViewCellSection6.xib */,
+				047C13092742176A0092B3A6 /* buttonCollection6 */,
+				0474838D2741FEFF009B3D47 /* TableViewCellSection7.swift */,
+				0474838E2741FEFF009B3D47 /* TableViewCellSection7.xib */,
+				0474839927420121009B3D47 /* collectionCellDetail7 */,
+				047483912741FF0F009B3D47 /* TableViewCellSection8.swift */,
+				047483922741FF0F009B3D47 /* TableViewCellSection8.xib */,
+				047483952741FF27009B3D47 /* TableViewCellSection9.swift */,
+				047483962741FF27009B3D47 /* TableViewCellSection9.xib */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		0474839927420121009B3D47 /* collectionCellDetail7 */ = {
+			isa = PBXGroup;
+			children = (
+				0474839A27420187009B3D47 /* CollectionViewCellDetail.swift */,
+				0474839B27420187009B3D47 /* CollectionViewCellDetail.xib */,
+			);
+			path = collectionCellDetail7;
+			sourceTree = "<group>";
+		};
+		047C13092742176A0092B3A6 /* buttonCollection6 */ = {
+			isa = PBXGroup;
+			children = (
+				047C130B274217C40092B3A6 /* CollectionViewCellButton6.swift */,
+				047C130C274217C40092B3A6 /* CollectionViewCellButton6.xib */,
+			);
+			path = buttonCollection6;
+			sourceTree = "<group>";
+		};
+		048792C527456FDB001293EC /* tableViewCell 1 */ = {
+			isa = PBXGroup;
+			children = (
+				048792C127456FCA001293EC /* CollectionViewCellDetail1.swift */,
+				048792C227456FCA001293EC /* CollectionViewCellDetail1.xib */,
+			);
+			path = "tableViewCell 1";
+			sourceTree = "<group>";
+		};
+		09E739AC4A9DDCDFE8C32764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55DEC56B5CF58C77045E323B /* Pods_Z2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		521192C727323D3700E8ED11 = {
@@ -118,6 +225,8 @@
 			children = (
 				521192D227323D3700E8ED11 /* Z2 */,
 				521192D127323D3700E8ED11 /* Products */,
+				DB2C2157E30ECBBC9882A780 /* Pods */,
+				09E739AC4A9DDCDFE8C32764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +245,6 @@
 				521192ED273267E100E8ED11 /* GetStart */,
 				521192EA2732434C00E8ED11 /* view */,
 				521192E92732433A00E8ED11 /* Profile */,
-				521192E82732431E00E8ED11 /* Favorites */,
 				521192E72732430F00E8ED11 /* Home */,
 				521192D327323D3700E8ED11 /* AppDelegate.swift */,
 				521192D527323D3700E8ED11 /* SceneDelegate.swift */,
@@ -151,21 +259,16 @@
 			children = (
 				52C2C90927390309008AE895 /* homeDetail */,
 				521192D727323D3700E8ED11 /* HomeTapBarController.swift */,
-				52DA29AD2733E6FB00091B9F /* Home.storyboard */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		521192E82732431E00E8ED11 /* Favorites */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Favorites;
 			sourceTree = "<group>";
 		};
 		521192E92732433A00E8ED11 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				0471E527274632810091EBB2 /* ProfileVC.swift */,
+				0471E538274650940091EBB2 /* SingUp */,
+				0471E5352746403F0091EBB2 /* allSectionCell */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -173,6 +276,7 @@
 		521192EA2732434C00E8ED11 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				52DA29AD2733E6FB00091B9F /* Home.storyboard */,
 				521192DE27323D4000E8ED11 /* LaunchScreen.storyboard */,
 			);
 			path = view;
@@ -215,6 +319,15 @@
 			path = language;
 			sourceTree = "<group>";
 		};
+		DB2C2157E30ECBBC9882A780 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32656D7C08C05610E8945C9D /* Pods-Z2.debug.xcconfig */,
+				3DA47DCFB67F4E03F37E016D /* Pods-Z2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 521192E427323D4000E8ED11 /* Build configuration list for PBXNativeTarget "Z2" */;
 			buildPhases = (
+				C66967A04208720204704F5B /* [CP] Check Pods Manifest.lock */,
 				521192CC27323D3700E8ED11 /* Sources */,
 				521192CD27323D3700E8ED11 /* Frameworks */,
 				521192CE27323D3700E8ED11 /* Resources */,
+				10FF166CE6358A630B8A61AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +374,9 @@
 				Base,
 			);
 			mainGroup = 521192C727323D3700E8ED11;
+			packageReferences = (
+				043435B2274CA7F100ED20B8 /* XCRemoteSwiftPackageReference "Z2" */,
+			);
 			productRefGroup = 521192D127323D3700E8ED11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,19 +392,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				0472328E2740F45E00496D75 /* TableViewCellSection2.xib in Resources */,
+				047483902741FEFF009B3D47 /* TableViewCellSection7.xib in Resources */,
 				521192E027323D4000E8ED11 /* LaunchScreen.storyboard in Resources */,
 				52DA29AE2733E6FB00091B9F /* Home.storyboard in Resources */,
 				52C2C90D27390519008AE895 /* BannerCollectionViewCell.xib in Resources */,
 				52AA7C9C2733717400E96293 /* CollectionViewCellVC.xib in Resources */,
+				041507C827465F9C00CBC898 /* GeneralCell.xib in Resources */,
+				047483942741FF0F009B3D47 /* TableViewCellSection8.xib in Resources */,
+				0474839D27420187009B3D47 /* CollectionViewCellDetail.xib in Resources */,
 				521192DD27323D4000E8ED11 /* Assets.xcassets in Resources */,
 				526AFC23273E0AE000BAF3BF /* CheckMarkTableViewCell.xib in Resources */,
 				52C2C9082738D277008AE895 /* LatestPropertyTableViewCell.xib in Resources */,
+				047483982741FF27009B3D47 /* TableViewCellSection9.xib in Resources */,
+				047C130E274217C40092B3A6 /* CollectionViewCellButton6.xib in Resources */,
 				047232A227410E1C00496D75 /* TableViewCellSection6.xib in Resources */,
 				52FA35D1273B899900B301D2 /* ChooseLang.storyboard in Resources */,
 				0472329227410DB200496D75 /* TableViewCellSection3.xib in Resources */,
 				5231EE622732E3D500D1A712 /* Start.storyboard in Resources */,
 				52C2C9042738CE6E008AE895 /* BannerTableViewCell.xib in Resources */,
 				0472329E27410E0F00496D75 /* TableViewCellSection5.xib in Resources */,
+				048792C427456FCA001293EC /* CollectionViewCellDetail1.xib in Resources */,
 				0472329627410DC300496D75 /* TableViewCellSection4.xib in Resources */,
 				0472328A2740F39100496D75 /* TableViewCellSection1.xib in Resources */,
 			);
@@ -294,11 +419,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10FF166CE6358A630B8A61AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Z2/Pods-Z2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Z2/Pods-Z2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Z2/Pods-Z2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C66967A04208720204704F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Z2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		521192CC27323D3700E8ED11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0471E528274632810091EBB2 /* ProfileVC.swift in Sources */,
 				52C2C90C27390519008AE895 /* BannerCollectionViewCell.swift in Sources */,
 				521192D827323D3700E8ED11 /* HomeTapBarController.swift in Sources */,
 				0472329527410DC300496D75 /* TableViewCellSection4.swift in Sources */,
@@ -306,15 +474,26 @@
 				047232A127410E1C00496D75 /* TableViewCellSection6.swift in Sources */,
 				52C2C9032738CE6E008AE895 /* BannerTableViewCell.swift in Sources */,
 				52AA7C9B2733717400E96293 /* CollectionViewCellVC.swift in Sources */,
+				0474838F2741FEFF009B3D47 /* TableViewCellSection7.swift in Sources */,
 				52C2C9072738D277008AE895 /* LatestPropertyTableViewCell.swift in Sources */,
+				047483972741FF27009B3D47 /* TableViewCellSection9.swift in Sources */,
+				043435B4274CAE4800ED20B8 /* TextFieldsFloating.swift in Sources */,
 				0472329D27410E0F00496D75 /* TableViewCellSection5.swift in Sources */,
+				0474839C27420187009B3D47 /* CollectionViewCellDetail.swift in Sources */,
+				043435B6274CE4F200ED20B8 /* CustomTextField.swift in Sources */,
 				521192D427323D3700E8ED11 /* AppDelegate.swift in Sources */,
+				048792C327456FCA001293EC /* CollectionViewCellDetail1.swift in Sources */,
+				0471E53A274650B90091EBB2 /* SingUpVC.swift in Sources */,
 				526AFC22273E0AE000BAF3BF /* CheckMarkTableViewCell.swift in Sources */,
 				0472328D2740F45E00496D75 /* TableViewCellSection2.swift in Sources */,
 				047232892740F39100496D75 /* TableViewCellSection1.swift in Sources */,
+				047483932741FF0F009B3D47 /* TableViewCellSection8.swift in Sources */,
 				52B52194273B5BA200A7939A /* InfoDetail.swift in Sources */,
+				047C130D274217C40092B3A6 /* CollectionViewCellButton6.swift in Sources */,
 				0472329127410DB200496D75 /* TableViewCellSection3.swift in Sources */,
 				521192F12732684C00E8ED11 /* GetStartVC.swift in Sources */,
+				0471E53C27465A870091EBB2 /* ProfileSingUp.swift in Sources */,
+				041507C727465F9C00CBC898 /* GeneralCell.swift in Sources */,
 				521192D627323D3700E8ED11 /* SceneDelegate.swift in Sources */,
 				529050D72736606E004DD96D /* HomeMainViewTableVC.swift in Sources */,
 			);
@@ -452,6 +631,7 @@
 		};
 		521192E527323D4000E8ED11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32656D7C08C05610E8945C9D /* Pods-Z2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -480,6 +660,7 @@
 		};
 		521192E627323D4000E8ED11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA47DCFB67F4E03F37E016D /* Pods-Z2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -528,6 +709,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		043435B2274CA7F100ED20B8 /* XCRemoteSwiftPackageReference "Z2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soksovanraksmey/Z2";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 521192C827323D3700E8ED11 /* Project object */;
 }

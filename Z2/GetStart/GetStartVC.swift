@@ -34,6 +34,12 @@ class GetStartVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        if UserDefaults.standard.bool(forKey: "start") == true {
+            let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "home")
+            UIApplication.shared.windows.first?.rootViewController = vc
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        }
+        
         self.navigationController?.isNavigationBarHidden = true
         collection.dataSource = self
         collection.delegate = self
@@ -64,6 +70,15 @@ class GetStartVC: UIViewController{
         let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "home")
         UIApplication.shared.windows.first?.rootViewController = vc
         UIApplication.shared.windows.first?.makeKeyAndVisible()
+        
+        if btnGetStart.isSelected == true{
+            
+            UserDefaults.standard.set(true, forKey: "start")
+        }else {
+            UserDefaults.standard.set(false, forKey: "start")
+        }
+        
+        
         
     }
     

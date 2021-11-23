@@ -30,22 +30,25 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-uu-5KA">
-                        <rect key="frame" x="357" y="16" width="21" height="22"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-uu-5KA">
+                        <rect key="frame" x="358" y="15" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="5xH-cs-G9S"/>
+                            <constraint firstAttribute="height" constant="24" id="lbP-cb-6XQ"/>
+                        </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" title="Button" image="active-tick-square"/>
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Sam-uu-5KA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="58F-th-rAl"/>
                     <constraint firstItem="wFO-jC-G0a" firstAttribute="leading" secondItem="Cd2-Fk-So1" secondAttribute="trailing" constant="30" id="E4H-RV-NOf"/>
-                    <constraint firstAttribute="trailing" secondItem="Sam-uu-5KA" secondAttribute="trailing" constant="20" id="Q4Y-dV-kmU"/>
                     <constraint firstAttribute="bottom" secondItem="wFO-jC-G0a" secondAttribute="bottom" constant="16" id="RDI-Lc-a4m"/>
                     <constraint firstItem="Cd2-Fk-So1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="am4-dj-Pfw"/>
                     <constraint firstItem="wFO-jC-G0a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="eci-bA-EKY"/>
+                    <constraint firstAttribute="trailing" secondItem="Sam-uu-5KA" secondAttribute="trailing" constant="16" id="gSU-R9-1Vh"/>
                     <constraint firstItem="Cd2-Fk-So1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="gct-71-uDq"/>
                     <constraint firstAttribute="bottom" secondItem="Cd2-Fk-So1" secondAttribute="bottom" constant="6" id="ieQ-jy-tIe"/>
-                    <constraint firstAttribute="bottom" secondItem="Sam-uu-5KA" secondAttribute="bottom" constant="16" id="qCl-oV-Rse"/>
+                    <constraint firstItem="Sam-uu-5KA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="muf-2r-0hQ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -57,4 +60,7 @@
             <point key="canvasLocation" x="34.782608695652179" y="55.580357142857139"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="active-tick-square" width="20" height="20"/>
+    </resources>
 </document>

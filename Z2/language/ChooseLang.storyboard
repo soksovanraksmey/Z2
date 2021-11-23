@@ -37,8 +37,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jf-H6-Jta">
-                                <rect key="frame" x="25" y="805" width="365" height="32"/>
+                                <rect key="frame" x="25" y="789" width="365" height="48"/>
                                 <color key="backgroundColor" name="Z1 Aqua"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kly-hh-5I6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" name="Bg"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -48,7 +51,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8Bg-Mn-9La">
-                                <rect key="frame" x="0.0" y="435" width="414" height="359"/>
+                                <rect key="frame" x="0.0" y="435" width="414" height="343"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="CIX-uv-z9r" imageView="SkT-Br-5YT" style="IBUITableViewCellStyleDefault" id="lh3-SK-p2K">

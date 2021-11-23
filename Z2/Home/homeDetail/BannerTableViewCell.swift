@@ -15,7 +15,9 @@ class BannerTableViewCell: UITableViewCell {
     let image = ["banner1","banner2","banner3"]
     
     let page = BannerCollectionViewCell()
-
+    
+    var time = Timer()
+    var counter = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,8 +28,28 @@ class BannerTableViewCell: UITableViewCell {
         collectionView.contentOffset = .zero
         collectionView.register(BannerCollectionViewCell.nib, forCellWithReuseIdentifier: BannerCollectionViewCell.id)
         
+        time = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+        
     }
-
+    
+    @objc func changeImage(){
+        
+        if counter < image.count{
+            let  index = IndexPath.init(item: counter , section: 0)
+            self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            pageControl.currentPage = counter
+            counter += 1
+        }else {
+            counter = 0
+            let  index = IndexPath.init(item: counter , section: 0)
+            self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            pageControl.currentPage = counter
+        }
+        
+        
+    }
+    
+    
 }
 
 extension BannerTableViewCell: UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{

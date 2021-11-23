@@ -14,14 +14,12 @@ class LatestPropertyTableViewCell: UITableViewCell {
     
     @IBOutlet var viewDate: UIView!
     
+    @IBOutlet weak var btnLike: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         
         imageSell.layer.cornerRadius = 10
-        imageSell.layer.shadowOffset = CGSize(width: 10,
-                                                height: 10)
-        imageSell.layer.shadowRadius = 3
-        imageSell.layer.shadowOpacity = 0.3
+        
         
     }
 
@@ -31,5 +29,19 @@ class LatestPropertyTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-   
+    @IBAction func btnLike(_ sender: Any) {
+        
+        if btnLike.tag == 0 { // like
+            btnLike.setImage(UIImage(named: "unfavorite"), for: .normal)
+            btnLike.tag = 1
+        }else {
+            // unLike
+            btnLike.setImage(UIImage(named: "favorite"), for: .normal)
+            btnLike.tag = 0
+        }
+        
+        
+        
+    }
+    
 }
