@@ -6,14 +6,16 @@
 //
 
 import UIKit
-//import MaterialComponents
+import MaterialComponents
 
 
 
 class SingUpVC: UIViewController {
 
-
-    @IBOutlet weak var textView: UITextField!
+    @IBOutlet weak var btnContinue: UIButton!
+    
+//    @IBOutlet weak var textView: UITextField!
+    @IBOutlet weak var tfPhone: MDCOutlinedTextField!
     
     
 //    var textController: MDCTextInputControllerOutlined!
@@ -23,28 +25,24 @@ class SingUpVC: UIViewController {
         super.viewDidLoad()
         
         textFieldSetup()
-        
-//        let floatingTextfield = MDCTextField(frame: CGRect(x: 0, y: 20, width: self.view.frame.width - 50, height: 50))
-//        floatingTextfield.placeholder = "put your phone number"
-//        floatingTextfield.center = self.view.center
-//
-//        self.view.addSubview(floatingTextfield)
-//
-//
-//        self.textController = MDCTextInputControllerOutlined(textInput: floatingTextfield)
-//        self.textController.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
-        
+         
     }
     
     func textFieldSetup(){
-        textView.leftViewMode = .always
-       
-        let imageView1 = UIImageView()
-        let image1 = UIImage(named: "kh-lang")
-        imageView1.image = image1
+//        textView.leftViewMode = .always
+//
+//        let imageView1 = UIImageView()
+//        let image1 = UIImage(named: "kh-lang")
+//        imageView1.image = image1
+//
+//        imageView1.frame = CGRect(x: 10, y: 5 , width: textView.frame.height, height: textView.frame.height)
+//        textView.leftView = imageView1
         
-        imageView1.frame = CGRect(x: 10, y: 5 , width: textView.frame.height, height: textView.frame.height)
-        textView.leftView = imageView1
+        tfPhone.placeholder = "phone"
+        tfPhone.label.text = "Phone"
+        tfPhone.leadingAssistiveLabel.text = "error plz input phone.."
+//        tfPhone.l...........
+        
     
     }
     

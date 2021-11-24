@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		041507C727465F9C00CBC898 /* GeneralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041507C527465F9C00CBC898 /* GeneralCell.swift */; };
 		041507C827465F9C00CBC898 /* GeneralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041507C627465F9C00CBC898 /* GeneralCell.xib */; };
-		043435B4274CAE4800ED20B8 /* TextFieldsFloating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043435B3274CAE4800ED20B8 /* TextFieldsFloating.swift */; };
-		043435B6274CE4F200ED20B8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043435B5274CE4F200ED20B8 /* CustomTextField.swift */; };
 		0471E528274632810091EBB2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E527274632810091EBB2 /* ProfileVC.swift */; };
 		0471E53A274650B90091EBB2 /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E539274650B90091EBB2 /* SingUpVC.swift */; };
 		0471E53C27465A870091EBB2 /* ProfileSingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E53B27465A870091EBB2 /* ProfileSingUp.swift */; };
@@ -66,8 +64,6 @@
 /* Begin PBXFileReference section */
 		041507C527465F9C00CBC898 /* GeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCell.swift; sourceTree = "<group>"; };
 		041507C627465F9C00CBC898 /* GeneralCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralCell.xib; sourceTree = "<group>"; };
-		043435B3274CAE4800ED20B8 /* TextFieldsFloating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsFloating.swift; sourceTree = "<group>"; };
-		043435B5274CE4F200ED20B8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0471E527274632810091EBB2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = Z2/Home/homeDetail/Detail/ProfileVC.swift; sourceTree = SOURCE_ROOT; };
 		0471E539274650B90091EBB2 /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
 		0471E53B27465A870091EBB2 /* ProfileSingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSingUp.swift; sourceTree = "<group>"; };
@@ -150,8 +146,6 @@
 			children = (
 				0471E539274650B90091EBB2 /* SingUpVC.swift */,
 				0471E53B27465A870091EBB2 /* ProfileSingUp.swift */,
-				043435B3274CAE4800ED20B8 /* TextFieldsFloating.swift */,
-				043435B5274CE4F200ED20B8 /* CustomTextField.swift */,
 			);
 			path = SingUp;
 			sourceTree = "<group>";
@@ -477,10 +471,8 @@
 				0474838F2741FEFF009B3D47 /* TableViewCellSection7.swift in Sources */,
 				52C2C9072738D277008AE895 /* LatestPropertyTableViewCell.swift in Sources */,
 				047483972741FF27009B3D47 /* TableViewCellSection9.swift in Sources */,
-				043435B4274CAE4800ED20B8 /* TextFieldsFloating.swift in Sources */,
 				0472329D27410E0F00496D75 /* TableViewCellSection5.swift in Sources */,
 				0474839C27420187009B3D47 /* CollectionViewCellDetail.swift in Sources */,
-				043435B6274CE4F200ED20B8 /* CustomTextField.swift in Sources */,
 				521192D427323D3700E8ED11 /* AppDelegate.swift in Sources */,
 				048792C327456FCA001293EC /* CollectionViewCellDetail1.swift in Sources */,
 				0471E53A274650B90091EBB2 /* SingUpVC.swift in Sources */,
