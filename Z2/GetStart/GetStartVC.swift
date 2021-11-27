@@ -66,18 +66,18 @@ class GetStartVC: UIViewController{
     
     @IBAction func btnGetStart(_ sender: Any) {
 
-        //  change rootVC for push controller 
-        let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "home")
-        UIApplication.shared.windows.first?.rootViewController = vc
-        UIApplication.shared.windows.first?.makeKeyAndVisible()
+        //  change rootVC for push controller
+       
+//        if btnGetStart.isSelected == true{
         
-        if btnGetStart.isSelected == true{
+            UserDefaults.standard.set(true, forKey: "home")
+        
+            let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "home")
+            UIApplication.shared.windows.first?.rootViewController = vc
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
             
-            UserDefaults.standard.set(true, forKey: "start")
-        }else {
-            UserDefaults.standard.set(false, forKey: "start")
-        }
-        
+            print("btnAction")
+//        }
         
         
     }

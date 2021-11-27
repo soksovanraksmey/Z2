@@ -14,10 +14,6 @@ public struct Setting{
   
 }
 
-
-
-
-
 class ProfileVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -39,8 +35,14 @@ class ProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
+        if  UserDefaults.standard.bool(forKey: "login") == true{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileSingUp")
+            navigationController?.pushViewController(vc!, animated: false)
+            
+        }
+        
+        
         tableView.dataSource = self
         tableView.delegate = self
 
@@ -48,6 +50,13 @@ class ProfileVC: UIViewController {
         tableView.register(GeneralCell.nib
                            , forCellReuseIdentifier: GeneralCell.id)
         tableView.register(GeneralCell.nib, forCellReuseIdentifier: GeneralCell.id)
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+
     }
    
     @IBAction func singUp(_ sender: Any) {
@@ -122,6 +131,10 @@ extension ProfileVC : UITableViewDataSource,UITableViewDelegate{
         }
         
     }
+    
+    
+    
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section{

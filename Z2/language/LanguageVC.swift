@@ -29,10 +29,16 @@ class LanguageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if UserDefaults.standard.bool(forKey: "start") == true {
+        if UserDefaults.standard.bool(forKey: "home") == true {
+            
+//            let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "home") as! HomeMainViewTableVC
+            
+//            self.navigationController?.pushViewController(vc, animated: false)
+
             let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "home")
             UIApplication.shared.windows.first?.rootViewController = vc
             UIApplication.shared.windows.first?.makeKeyAndVisible()
+      
         }
         
 
@@ -53,11 +59,15 @@ class LanguageVC: UIViewController {
 
     @IBAction func btn(_ sender: Any) {
     
-        let vc = UIStoryboard(name: "Start", bundle: Bundle.main).instantiateViewController(withIdentifier: "start") as? GetStartVC
-        vc?.modalPresentationStyle = .fullScreen
-        navigationController?.present(vc!, animated: true)
-        
-        
+//        let vc = UIStoryboard(name: "Start", bundle: Bundle.main).instantiateViewController(withIdentifier: "start") as? GetStartVC
+//        vc?.modalPresentationStyle = .fullScreen
+//        navigationController?.present(vc!, animated: true)
+
+        let vc = UIStoryboard(name: "Start", bundle: Bundle.main).instantiateViewController(withIdentifier: "start")
+        UIApplication.shared.windows.first?.rootViewController = vc
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+  
+       
  
     }
     

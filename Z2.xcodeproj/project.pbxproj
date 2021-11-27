@@ -36,6 +36,8 @@
 		047C130E274217C40092B3A6 /* CollectionViewCellButton6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047C130C274217C40092B3A6 /* CollectionViewCellButton6.xib */; };
 		048792C327456FCA001293EC /* CollectionViewCellDetail1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048792C127456FCA001293EC /* CollectionViewCellDetail1.swift */; };
 		048792C427456FCA001293EC /* CollectionViewCellDetail1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048792C227456FCA001293EC /* CollectionViewCellDetail1.xib */; };
+		04C026FE27524646000336E8 /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C026FD27524646000336E8 /* FavoriteList.swift */; };
+		04C0270027529CD2000336E8 /* ChangeProfilePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C026FF27529CD2000336E8 /* ChangeProfilePhoto.swift */; };
 		521192D427323D3700E8ED11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D327323D3700E8ED11 /* AppDelegate.swift */; };
 		521192D627323D3700E8ED11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D527323D3700E8ED11 /* SceneDelegate.swift */; };
 		521192D827323D3700E8ED11 /* HomeTapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D727323D3700E8ED11 /* HomeTapBarController.swift */; };
@@ -91,6 +93,8 @@
 		047C130C274217C40092B3A6 /* CollectionViewCellButton6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellButton6.xib; sourceTree = "<group>"; };
 		048792C127456FCA001293EC /* CollectionViewCellDetail1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellDetail1.swift; sourceTree = "<group>"; };
 		048792C227456FCA001293EC /* CollectionViewCellDetail1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellDetail1.xib; sourceTree = "<group>"; };
+		04C026FD27524646000336E8 /* FavoriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteList.swift; sourceTree = "<group>"; };
+		04C026FF27529CD2000336E8 /* ChangeProfilePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeProfilePhoto.swift; sourceTree = "<group>"; };
 		32656D7C08C05610E8945C9D /* Pods-Z2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z2.debug.xcconfig"; path = "Target Support Files/Pods-Z2/Pods-Z2.debug.xcconfig"; sourceTree = "<group>"; };
 		3DA47DCFB67F4E03F37E016D /* Pods-Z2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z2.release.xcconfig"; path = "Target Support Files/Pods-Z2/Pods-Z2.release.xcconfig"; sourceTree = "<group>"; };
 		521192D027323D3700E8ED11 /* Z2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +210,14 @@
 			path = "tableViewCell 1";
 			sourceTree = "<group>";
 		};
+		04C026FC2752460A000336E8 /* favorite */ = {
+			isa = PBXGroup;
+			children = (
+				04C026FD27524646000336E8 /* FavoriteList.swift */,
+			);
+			path = favorite;
+			sourceTree = "<group>";
+		};
 		09E739AC4A9DDCDFE8C32764 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +247,7 @@
 		521192D227323D3700E8ED11 /* Z2 */ = {
 			isa = PBXGroup;
 			children = (
+				04C026FC2752460A000336E8 /* favorite */,
 				52FA35C8273B82B700B301D2 /* language */,
 				521192ED273267E100E8ED11 /* GetStart */,
 				521192EA2732434C00E8ED11 /* view */,
@@ -263,6 +276,7 @@
 				0471E527274632810091EBB2 /* ProfileVC.swift */,
 				0471E538274650940091EBB2 /* SingUp */,
 				0471E5352746403F0091EBB2 /* allSectionCell */,
+				04C026FF27529CD2000336E8 /* ChangeProfilePhoto.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -369,7 +383,6 @@
 			);
 			mainGroup = 521192C727323D3700E8ED11;
 			packageReferences = (
-				043435B2274CA7F100ED20B8 /* XCRemoteSwiftPackageReference "Z2" */,
 			);
 			productRefGroup = 521192D127323D3700E8ED11 /* Products */;
 			projectDirPath = "";
@@ -463,6 +476,7 @@
 				0471E528274632810091EBB2 /* ProfileVC.swift in Sources */,
 				52C2C90C27390519008AE895 /* BannerCollectionViewCell.swift in Sources */,
 				521192D827323D3700E8ED11 /* HomeTapBarController.swift in Sources */,
+				04C026FE27524646000336E8 /* FavoriteList.swift in Sources */,
 				0472329527410DC300496D75 /* TableViewCellSection4.swift in Sources */,
 				52FA35D3273B89BA00B301D2 /* LanguageVC.swift in Sources */,
 				047232A127410E1C00496D75 /* TableViewCellSection6.swift in Sources */,
@@ -473,6 +487,7 @@
 				047483972741FF27009B3D47 /* TableViewCellSection9.swift in Sources */,
 				0472329D27410E0F00496D75 /* TableViewCellSection5.swift in Sources */,
 				0474839C27420187009B3D47 /* CollectionViewCellDetail.swift in Sources */,
+				04C0270027529CD2000336E8 /* ChangeProfilePhoto.swift in Sources */,
 				521192D427323D3700E8ED11 /* AppDelegate.swift in Sources */,
 				048792C327456FCA001293EC /* CollectionViewCellDetail1.swift in Sources */,
 				0471E53A274650B90091EBB2 /* SingUpVC.swift in Sources */,
@@ -701,17 +716,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		043435B2274CA7F100ED20B8 /* XCRemoteSwiftPackageReference "Z2" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/soksovanraksmey/Z2";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 521192C827323D3700E8ED11 /* Project object */;
 }

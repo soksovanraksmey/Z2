@@ -39,6 +39,8 @@ class ProfileSingUp: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
         tableView.dataSource = self
         tableView.delegate = self
 
@@ -53,6 +55,20 @@ class ProfileSingUp: UIViewController {
     }
     
 
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+
+    }
+
+
+    @IBAction func btnViewProfile(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "changeProfilePhoto")
+        navigationController?.pushViewController(vc!, animated: true)
+        
+        
+    }
+    
 
 }
 
@@ -136,6 +152,54 @@ extension ProfileSingUp : UITableViewDataSource,UITableViewDelegate{
             return UITableViewCell()
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      
+        switch indexPath.section{
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: GeneralCell.id ,for: indexPath) as! GeneralCell
+            cell.iconImage.image = UIImage(named: section1[indexPath.row].image)
+            cell.title.text = section1[indexPath.row].title
+            
+            
+         
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: GeneralCell.id, for: indexPath) as! GeneralCell
+            cell.iconImage.image = UIImage(named: section2[indexPath.row].image)
+            cell.title.text = section2[indexPath.row].title
+    
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: GeneralCell.id, for: indexPath) as! GeneralCell
+            cell.iconImage.image = UIImage(named: section3[indexPath.row].image)
+            cell.title.text = section3[indexPath.row].title
+         
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: GeneralCell.id, for: indexPath) as! GeneralCell
+            cell.iconImage.image = UIImage(named: section4[indexPath.row].image)
+            cell.title.text = section4[indexPath.row].title
+   
+        case 4:
+           
+            UserDefaults.standard.set(false, forKey: "login")
+            
+//            let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "logOut")
+//            UIApplication.shared.windows.first?.rootViewController = vc
+//            UIApplication.shared.windows.first?.makeKeyAndVisible()
+            
+            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "logOut")
+
+            navigationController?.pushViewController(vc!, animated: true)
+          print("section5 logOut")
+            
+        default:
+            print("Out of section")
+        }
+        
+        
+        
+
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
