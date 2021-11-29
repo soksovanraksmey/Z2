@@ -15,6 +15,16 @@ class LatestPropertyTableViewCell: UITableViewCell {
     @IBOutlet var viewDate: UIView!
     
     @IBOutlet weak var btnLike: UIButton!
+    @IBOutlet weak var viewCount: UILabel!
+    @IBOutlet weak var listingAge: UILabel!
+    @IBOutlet weak var favorite: UIButton!
+    @IBOutlet weak var landArea: UILabel!
+    @IBOutlet weak var shortAddress: UILabel!
+    @IBOutlet weak var propertyType: UILabel!
+    
+  
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

@@ -163,7 +163,13 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="btnLike" destination="FVn-u9-Qtm" id="YG5-OW-ToJ"/>
+                <outlet property="favorite" destination="FVn-u9-Qtm" id="S7z-4a-0Iz"/>
                 <outlet property="imageSell" destination="4Ye-OX-Nfx" id="Fvd-nr-aF5"/>
+                <outlet property="landArea" destination="x2m-op-LPt" id="3j0-BP-mKG"/>
+                <outlet property="listingAge" destination="oBi-9B-4nL" id="HhD-VG-rbe"/>
+                <outlet property="propertyType" destination="C58-Bc-rhO" id="LJy-QT-oJV"/>
+                <outlet property="shortAddress" destination="jJ1-hu-rjC" id="pI6-ro-upl"/>
+                <outlet property="viewCount" destination="fzt-ez-6nL" id="gGb-zE-BnD"/>
                 <outlet property="viewDate" destination="VNN-UG-Wcy" id="4M1-HR-TWL"/>
             </connections>
             <point key="canvasLocation" x="530" y="-11"/>

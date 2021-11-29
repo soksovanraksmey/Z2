@@ -76,7 +76,7 @@ extension TableViewCellSection1: UICollectionViewDelegate,UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cel = collection.dequeueReusableCell(withReuseIdentifier: CollectionViewCellDetail1.id, for: indexPath)
-        
+       
         return cel
     }
     

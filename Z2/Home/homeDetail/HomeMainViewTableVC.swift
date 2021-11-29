@@ -7,25 +7,108 @@
 
 import UIKit
 
+struct Banners: Codable {
+let data: [Banner]
+}
+
+struct Banner: Codable {
+    let image: ImageOption
+}
+
+struct ImageOption: Codable {
+    let large: String
+    let original: String
+}
+
+struct Listings: Codable {
+    let data: [Listing]
+}
+
+struct Listing: Codable {
+    let view_count: Int
+    let listing_age: Int /// 0 => new lisitng else ... days on z1
+    let favorite: Bool
+    let land_area: Double
+    let short_address: String
+    let property_type: String
+    let image: ImageOption
+}
+
 class HomeMainViewTableVC: UIViewController {
-
+    
+    let addsURL = "https://api-stagging.z1platform.com/api/s36/api/v2/news_and_ads?format=Ads"
+    let listingsURL = "https://api-stagging.z1platform.com/api/s36/api/v2/listings"
+    var banners: [String] = []
+    var imageList: [String] = []
+    var viewCounts: [Int] = []
+    var listingAges: [Int]  = []
+    var landAreas: [Double] = []
+    var shortAddress: [String] = []
+    var propertyTypes:[String] = []
+    
+    
     @IBOutlet weak var tableView: UITableView!
-    
 
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
 
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.register(BannerTableViewCell.nib, forCellReuseIdentifier: BannerTableViewCell.id)
         tableView.register(LatestPropertyTableViewCell.nib, forCellReuseIdentifier: LatestPropertyTableViewCell.id)
+        
+        getBannerAPI()
+        getListingAPI()
+
+        
     }
+    
+    
+    func getListingAPI(){
+        URLSession.shared.dataTask(with: URLRequest(url: URL(string: listingsURL)!)) { data, response, error in
+            if let data = data {
+                if let listings = try? JSONDecoder().decode(Listings.self, from: data) {
+                    print(listings.data)
+                   
+                    let imageListing = listings.data.map({$0.image.original})
+                    let shortAddress = listings.data.map({$0.short_address})
+                    let propertyType = listings.data.map({$0.property_type})
+                    let landArea = listings.data.map({$0.land_area})
+                    self.landAreas = landArea
+                    self.propertyTypes = propertyType
+                    self.shortAddress = shortAddress
+                    self.imageList = imageListing
+                    DispatchQueue.main.async {
+                        self.tableView.reloadSections(IndexSet(integer: 1), with: .automatic)
+                    }
+                } else {
+                    print("error decoding...")
+                }
+            }
+        }.resume()
+    }
+    
+    func getBannerAPI(){
+        URLSession.shared.dataTask(with: URLRequest(url: URL(string: addsURL)!)) { data, response, error in
+            if let data = data {
+                if let banners = try? JSONDecoder().decode(Banners.self, from: data) {
+//                    print(banners)
+                    let images = banners.data.map({$0.image.original})
+                    self.banners = images
+                    DispatchQueue.main.async {
+                        self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
+                    }
+                } else {
+                    print("error decoding...")
+                }
+            }
+        }.resume()
+    }
+    
+    
+    
     
 
 }
@@ -42,7 +125,7 @@ extension HomeMainViewTableVC: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return 1
         case 1:
-            return 8
+            return imageList.count
         default:
             return 1
         }
@@ -52,10 +135,19 @@ extension HomeMainViewTableVC: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.section {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: BannerTableViewCell.id, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: BannerTableViewCell.id, for: indexPath) as! BannerTableViewCell
+            cell.images = banners
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: LatestPropertyTableViewCell.id, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: LatestPropertyTableViewCell.id, for: indexPath) as!
+            LatestPropertyTableViewCell
+            
+            cell.imageSell.image = UIImage(data: try! Data(contentsOf: URL(string: imageList[indexPath.row])!))
+//            cell.viewCount.text = viewCounts[indexPath.row]
+            cell.landArea.text = String(landAreas[indexPath.row])
+            cell.shortAddress.text = shortAddress[indexPath.row]
+            cell.propertyType.text = propertyTypes[indexPath.row]
+            
             return cell
         default:
             
@@ -98,10 +190,7 @@ extension HomeMainViewTableVC: UITableViewDelegate, UITableViewDataSource {
 //        print("hello")
 
     }
-    
-    
-    
- 
+
 }
 
 

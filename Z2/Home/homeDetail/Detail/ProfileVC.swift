@@ -36,12 +36,16 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.tabBarItem.title = "SignUp"
+        
         if  UserDefaults.standard.bool(forKey: "login") == true{
             let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileSingUp")
             navigationController?.pushViewController(vc!, animated: false)
             
         }
         
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    navigationItem.backBarButtonItem?.tintColor = .gray
         
         tableView.dataSource = self
         tableView.delegate = self

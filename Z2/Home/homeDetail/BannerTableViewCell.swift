@@ -12,7 +12,11 @@ class BannerTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    let image = ["banner1","banner2","banner3"]
+    var images: [String] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     
     let page = BannerCollectionViewCell()
     
@@ -28,13 +32,14 @@ class BannerTableViewCell: UITableViewCell {
         collectionView.contentOffset = .zero
         collectionView.register(BannerCollectionViewCell.nib, forCellWithReuseIdentifier: BannerCollectionViewCell.id)
         
-        time = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+        time = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
         
     }
     
     @objc func changeImage(){
+        guard !images.isEmpty else { return }
         
-        if counter < image.count{
+        if counter < images.count{
             let  index = IndexPath.init(item: counter , section: 0)
             self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
             pageControl.currentPage = counter
@@ -54,7 +59,7 @@ class BannerTableViewCell: UITableViewCell {
 
 extension BannerTableViewCell: UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return image.count
+        return images.count
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
@@ -66,8 +71,9 @@ extension BannerTableViewCell: UICollectionViewDelegate,UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCollectionViewCell.id, for: indexPath) as? BannerCollectionViewCell
+        cell?.imageBanner.image = UIImage(data: try! Data(contentsOf: URL(string: images[indexPath.row])!))
         
-        cell?.imageBanner.image = UIImage(named: image[indexPath.row])
+//        cell?.imageBanner.image = UIImage(named: images[indexPath.row])
 //        cell.pageControl.currentPage = indexPath
 //            switch indexPath.row {
 //                  case 0:

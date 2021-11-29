@@ -24,14 +24,27 @@ class SingUpVC: UIViewController , UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+        navigationController?.isNavigationBarHidden = false
         
         textFieldSetup()
         btnContinue.layer.cornerRadius = 5
         tfPhone.delegate = self
+        tfPhone.keyboardType = .phonePad
+       
+//        if tfPhone.text?.isEmpty == true{
+//
+//            btnContinue.backgroundColor = .systemTeal
+//        }else if tfPhone.text?.isEmpty != true{
+//            btnContinue.backgroundColor = .lightGray
+//        }
+        
+    
         
     }
+    
+  
+    
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         let numberChar = "+1234567890"
@@ -45,14 +58,13 @@ class SingUpVC: UIViewController , UITextFieldDelegate{
 
         tfPhone.placeholder = "phone number"
         tfPhone.label.text = "Phone"
-        
+    
     
     }
     
     @IBAction func btnContinue(_ sender: Any) {
     
-        if tfPhone.text == tfPhone.text {
-            
+        if tfPhone.text != ""  {
             
             UserDefaults.standard.set(true, forKey: "login")
             formatPhoneNumber(phoneNumber: tfPhone.text!)
@@ -62,6 +74,12 @@ class SingUpVC: UIViewController , UITextFieldDelegate{
             navigationController?.pushViewController(vc!, animated: true)
             print("ready save ")
 //            print(error?.localizedDescription)
+        }else if tfPhone.text == ""{
+            
+            let alert = UIAlertController(title: "Confirm", message: "Please input your phone number to continue", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: .none)
+            alert.addAction(ok)
+            present(alert, animated: true)
         }
 
     }

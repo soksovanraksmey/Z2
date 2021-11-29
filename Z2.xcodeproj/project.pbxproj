@@ -38,6 +38,8 @@
 		048792C427456FCA001293EC /* CollectionViewCellDetail1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048792C227456FCA001293EC /* CollectionViewCellDetail1.xib */; };
 		04C026FE27524646000336E8 /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C026FD27524646000336E8 /* FavoriteList.swift */; };
 		04C0270027529CD2000336E8 /* ChangeProfilePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C026FF27529CD2000336E8 /* ChangeProfilePhoto.swift */; };
+		04C027032752A769000336E8 /* ProfileDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C027012752A769000336E8 /* ProfileDetailTableViewCell.swift */; };
+		04C027042752A769000336E8 /* ProfileDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C027022752A769000336E8 /* ProfileDetailTableViewCell.xib */; };
 		521192D427323D3700E8ED11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D327323D3700E8ED11 /* AppDelegate.swift */; };
 		521192D627323D3700E8ED11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D527323D3700E8ED11 /* SceneDelegate.swift */; };
 		521192D827323D3700E8ED11 /* HomeTapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521192D727323D3700E8ED11 /* HomeTapBarController.swift */; };
@@ -95,6 +97,8 @@
 		048792C227456FCA001293EC /* CollectionViewCellDetail1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellDetail1.xib; sourceTree = "<group>"; };
 		04C026FD27524646000336E8 /* FavoriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteList.swift; sourceTree = "<group>"; };
 		04C026FF27529CD2000336E8 /* ChangeProfilePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeProfilePhoto.swift; sourceTree = "<group>"; };
+		04C027012752A769000336E8 /* ProfileDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailTableViewCell.swift; sourceTree = "<group>"; };
+		04C027022752A769000336E8 /* ProfileDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileDetailTableViewCell.xib; sourceTree = "<group>"; };
 		32656D7C08C05610E8945C9D /* Pods-Z2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z2.debug.xcconfig"; path = "Target Support Files/Pods-Z2/Pods-Z2.debug.xcconfig"; sourceTree = "<group>"; };
 		3DA47DCFB67F4E03F37E016D /* Pods-Z2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z2.release.xcconfig"; path = "Target Support Files/Pods-Z2/Pods-Z2.release.xcconfig"; sourceTree = "<group>"; };
 		521192D027323D3700E8ED11 /* Z2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +281,8 @@
 				0471E538274650940091EBB2 /* SingUp */,
 				0471E5352746403F0091EBB2 /* allSectionCell */,
 				04C026FF27529CD2000336E8 /* ChangeProfilePhoto.swift */,
+				04C027012752A769000336E8 /* ProfileDetailTableViewCell.swift */,
+				04C027022752A769000336E8 /* ProfileDetailTableViewCell.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				52DA29AE2733E6FB00091B9F /* Home.storyboard in Resources */,
 				52C2C90D27390519008AE895 /* BannerCollectionViewCell.xib in Resources */,
 				52AA7C9C2733717400E96293 /* CollectionViewCellVC.xib in Resources */,
+				04C027042752A769000336E8 /* ProfileDetailTableViewCell.xib in Resources */,
 				041507C827465F9C00CBC898 /* GeneralCell.xib in Resources */,
 				047483942741FF0F009B3D47 /* TableViewCellSection8.xib in Resources */,
 				0474839D27420187009B3D47 /* CollectionViewCellDetail.xib in Resources */,
@@ -481,6 +488,7 @@
 				52FA35D3273B89BA00B301D2 /* LanguageVC.swift in Sources */,
 				047232A127410E1C00496D75 /* TableViewCellSection6.swift in Sources */,
 				52C2C9032738CE6E008AE895 /* BannerTableViewCell.swift in Sources */,
+				04C027032752A769000336E8 /* ProfileDetailTableViewCell.swift in Sources */,
 				52AA7C9B2733717400E96293 /* CollectionViewCellVC.swift in Sources */,
 				0474838F2741FEFF009B3D47 /* TableViewCellSection7.swift in Sources */,
 				52C2C9072738D277008AE895 /* LatestPropertyTableViewCell.swift in Sources */,

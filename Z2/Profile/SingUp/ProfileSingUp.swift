@@ -56,7 +56,13 @@ class ProfileSingUp: UIViewController {
     
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
+
+            navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem?.tintColor = .gray
+        
+//        navigationItem.backBarButtonItem?.accessibilityFrame.size = CGSize(width: 10.0, height: 10.0)
 
     }
 

@@ -592,35 +592,9 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Change Profile Photo"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eBc-GO-7vN">
-                                <rect key="frame" x="0.0" y="234" width="414" height="291"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eBc-GO-7vN">
+                                <rect key="frame" x="0.0" y="234" width="414" height="628"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="53F-pF-st8" detailTextLabel="Bka-Pq-XX2" style="IBUITableViewCellStyleValue1" id="AGe-OY-4Zx">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AGe-OY-4Zx" id="gEv-R1-AOw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53F-pF-st8">
-                                                    <rect key="frame" x="20" y="15" width="25" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bka-Pq-XX2">
-                                                    <rect key="frame" x="361" y="15" width="33" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NkZ-XY-IjG"/>
@@ -628,7 +602,7 @@
                         <constraints>
                             <constraint firstItem="b1m-G7-WFn" firstAttribute="centerX" secondItem="ndp-is-EIB" secondAttribute="centerX" id="1qm-xk-dgZ"/>
                             <constraint firstItem="eBc-GO-7vN" firstAttribute="trailing" secondItem="NkZ-XY-IjG" secondAttribute="trailing" id="UBD-YN-4fK"/>
-                            <constraint firstItem="NkZ-XY-IjG" firstAttribute="bottom" secondItem="eBc-GO-7vN" secondAttribute="bottom" constant="337" id="UdP-36-HLG"/>
+                            <constraint firstItem="NkZ-XY-IjG" firstAttribute="bottom" secondItem="eBc-GO-7vN" secondAttribute="bottom" priority="250" id="UdP-36-HLG"/>
                             <constraint firstItem="pME-8R-d4M" firstAttribute="top" secondItem="b1m-G7-WFn" secondAttribute="bottom" constant="10" id="aEI-AR-XEv"/>
                             <constraint firstItem="eBc-GO-7vN" firstAttribute="top" secondItem="pME-8R-d4M" secondAttribute="bottom" constant="41" id="gga-Mf-Tks"/>
                             <constraint firstItem="b1m-G7-WFn" firstAttribute="top" secondItem="NkZ-XY-IjG" secondAttribute="top" constant="24" id="lNA-AN-YGu"/>
