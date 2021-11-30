@@ -76,6 +76,11 @@ class HomeMainViewTableVC: UIViewController {
                     let shortAddress = listings.data.map({$0.short_address})
                     let propertyType = listings.data.map({$0.property_type})
                     let landArea = listings.data.map({$0.land_area})
+                    let viewCount = listings.data.map({$0.view_count})
+                    let listingAge = listings.data.map({$0.listing_age})
+                    
+                    self.listingAges = listingAge
+                    self.viewCounts = viewCount
                     self.landAreas = landArea
                     self.propertyTypes = propertyType
                     self.shortAddress = shortAddress
@@ -147,6 +152,10 @@ extension HomeMainViewTableVC: UITableViewDelegate, UITableViewDataSource {
             cell.landArea.text = String(landAreas[indexPath.row])
             cell.shortAddress.text = shortAddress[indexPath.row]
             cell.propertyType.text = propertyTypes[indexPath.row]
+            
+            cell.viewCount.text = String(viewCounts[indexPath.row])
+            cell.listingAge.text = String(listingAges[indexPath.row])
+    
             
             return cell
         default:

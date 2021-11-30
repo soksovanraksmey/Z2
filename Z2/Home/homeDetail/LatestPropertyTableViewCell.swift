@@ -29,9 +29,10 @@ class LatestPropertyTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         imageSell.layer.cornerRadius = 10
-        
-        
+        viewDate.layer.cornerRadius = 9
+        viewDate.layer.maskedCorners = [.layerMinXMinYCorner]
     }
+
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
