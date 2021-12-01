@@ -7,37 +7,12 @@
 
 import UIKit
 
-struct Banners: Codable {
-let data: [Banner]
-}
-
-struct Banner: Codable {
-    let image: ImageOption
-}
-
-struct ImageOption: Codable {
-    let large: String
-    let original: String
-}
-
-struct Listings: Codable {
-    let data: [Listing]
-}
-
-struct Listing: Codable {
-    let view_count: Int
-    let listing_age: Int /// 0 => new lisitng else ... days on z1
-    let favorite: Bool
-    let land_area: Double
-    let short_address: String
-    let property_type: String
-    let image: ImageOption
-}
 
 class HomeMainViewTableVC: UIViewController {
     
     let addsURL = "https://api-stagging.z1platform.com/api/s36/api/v2/news_and_ads?format=Ads"
     let listingsURL = "https://api-stagging.z1platform.com/api/s36/api/v2/listings"
+    
     var banners: [String] = []
     var imageList: [String] = []
     var viewCounts: [Int] = []
@@ -55,7 +30,7 @@ class HomeMainViewTableVC: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
-        
+
         tableView.register(BannerTableViewCell.nib, forCellReuseIdentifier: BannerTableViewCell.id)
         tableView.register(LatestPropertyTableViewCell.nib, forCellReuseIdentifier: LatestPropertyTableViewCell.id)
         
@@ -69,7 +44,7 @@ class HomeMainViewTableVC: UIViewController {
     func getListingAPI(){
         URLSession.shared.dataTask(with: URLRequest(url: URL(string: listingsURL)!)) { data, response, error in
             if let data = data {
-                if let listings = try? JSONDecoder().decode(Listings.self, from: data) {
+                if let listings = try? JSONDecoder().decode(ModelVc.Listings.self, from: data) {
                     print(listings.data)
                    
                     let imageListing = listings.data.map({$0.image.original})
@@ -98,7 +73,7 @@ class HomeMainViewTableVC: UIViewController {
     func getBannerAPI(){
         URLSession.shared.dataTask(with: URLRequest(url: URL(string: addsURL)!)) { data, response, error in
             if let data = data {
-                if let banners = try? JSONDecoder().decode(Banners.self, from: data) {
+                if let banners = try? JSONDecoder().decode(ModelVc.Banners.self, from: data) {
 //                    print(banners)
                     let images = banners.data.map({$0.image.original})
                     self.banners = images

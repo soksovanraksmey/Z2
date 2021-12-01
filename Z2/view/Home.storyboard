@@ -113,7 +113,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2F-7y-jJT">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1038"/>
                                         <subviews>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WmN-NJ-bmC">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WmN-NJ-bmC">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1038"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </tableView>
@@ -289,6 +289,7 @@
                         <viewLayoutGuide key="safeArea" id="63S-Ye-7eM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="h20-nz-28h" firstAttribute="centerX" secondItem="bG5-Gq-0bj" secondAttribute="centerX" id="0x1-un-VyJ"/>
                             <constraint firstItem="63S-Ye-7eM" firstAttribute="trailing" secondItem="h20-nz-28h" secondAttribute="trailing" priority="250" constant="56" id="7Hk-ed-4dg"/>
                             <constraint firstItem="63S-Ye-7eM" firstAttribute="trailing" secondItem="W7X-UF-VAL" secondAttribute="trailing" constant="24" id="7RS-xY-ITy"/>
                             <constraint firstItem="onS-sC-8iz" firstAttribute="leading" secondItem="63S-Ye-7eM" secondAttribute="leading" constant="28" id="Bxo-9z-gTu"/>
@@ -559,6 +560,7 @@
                             <constraint firstItem="m5n-Su-GIf" firstAttribute="leading" secondItem="VQP-z7-8qy" secondAttribute="trailing" constant="16" id="lNA-aS-OPD"/>
                             <constraint firstItem="G9G-m6-Lz6" firstAttribute="leading" secondItem="VQP-z7-8qy" secondAttribute="trailing" constant="16" id="nLM-CM-kbt"/>
                             <constraint firstItem="ah8-1H-8Un" firstAttribute="leading" secondItem="Vjv-oV-AVI" secondAttribute="leading" id="rCd-GA-adX"/>
+                            <constraint firstItem="aVJ-ZN-4rT" firstAttribute="centerX" secondItem="2S1-r6-3ue" secondAttribute="centerX" id="vb7-lV-fXA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FkL-sQ-X2F"/>
